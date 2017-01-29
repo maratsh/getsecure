@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 from urllib.parse import urlparse
 
 
-def secure_link(baselink, secret, period='30'):
+def secure_link(baselink, secret, period=30):
     """
 
     :param baselink: base url for signing
@@ -38,7 +38,7 @@ if __name__ == '__main__':
     parser.add_argument('baselink')
     parser.add_argument('secret', type=str)
 
-    parser.add_argument('--period', default='30', type=int)
+    parser.add_argument('--period', default=30, type=int)
 
     options = parser.parse_args()
     link = secure_link(options.baselink, options.secret, options.period)
