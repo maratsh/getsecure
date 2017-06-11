@@ -32,4 +32,4 @@ or
 /secret_page.html?md5=IQ6H6OQYGeUnlLEDgHfYNw&expires=1488221041
 ```
 
-
+where period is days from now to future when link should work
