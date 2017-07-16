@@ -1,9 +1,9 @@
 # getsecure
 Utility for securing expiring links
 
-#Usage
+# Usage
 
-##Add to nginx vhost secure location section like this
+## Add to nginx vhost secure location section like this
 
 ```
     location /secret_page.html {
@@ -20,7 +20,7 @@ Utility for securing expiring links
     }
 ```
 
-##Get secure link
+## Get secure link
 
 ```
 -> python secure.py http://example.com/secret_page.html <put here secret string> --period=30
