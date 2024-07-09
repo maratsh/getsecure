@@ -19,4 +19,5 @@ jobs:
           PULL_REQUEST_BRANCH: "master"
           PULL_REQUEST_UPDATE: true
           PASS_IF_EXISTS: true
-          PULL_REQUEST_BODY: "feat: "
+          PULL_REQUEST_BODY: "Automated PR to update ${GITHUB_REF_NAME}"
+          PULL_REQUEST_TITLE: "feat: ${GITHUB_REF_NAME}"
