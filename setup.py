@@ -8,5 +8,6 @@ setup(
     license='MIT',
     author='maratsh',
     author_email='ya@maratsh.ru',
-    description='Utility for securing expiring links'
+    description='Utility for securing expiring links',
+    long_description="Utility for securing expiring links"
 )

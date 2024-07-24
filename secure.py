@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+""" secure links for limited time access with simple md5 hash """
 import hashlib
 from base64 import b64encode
 from datetime import datetime, timedelta
@@ -20,13 +20,13 @@ def secure_link(baselink, secret, period=30):
 
     expires = int((datetime.now() + timedelta(days=period)).timestamp())
 
-    hashstring = '{e}{u} {s}'.format(e=expires, u=url.path, s=secret)
+    hashstring = f'{expires}{url.path} {secret}'
 
     m = hashlib.md5()
     m.update(bytes(hashstring, encoding='utf-8'))
     protection_string = b64encode(m.digest(), altchars=b'-_').replace(b'=', b'').decode("ascii")
 
-    protected_link = '{b}?md5={p}&expires={e}'.format(b=baselink, p=protection_string, e=expires)
+    protected_link = f'{baselink}?md5={protection_string}&expires={expires}'
 
     return protected_link
 
