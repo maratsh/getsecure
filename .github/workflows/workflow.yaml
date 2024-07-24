@@ -25,9 +25,8 @@ jobs:
         uses: snok/install-poetry@v1
         with:
           virtualenvs-create: false
-      - name: Update version (kept at 0.0.0) in pyproject.toml and build
+      - name:  build python
         run: |
-          poetry version ${{ github.ref_name }}
           poetry build
 
       - name: Mint pypi token
