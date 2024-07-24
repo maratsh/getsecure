@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "getsecure"
+version = "0.0.7"
+description = "Utility for securing expiring links"
+authors = ["maratsh <ya@maratsh.ru>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/maratsh/getsecure"
+keywords = ["nginx, secure_ling"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
