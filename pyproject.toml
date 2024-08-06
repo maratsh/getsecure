@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "getsecure"
-version = "0.0.7"
+version = "0.0.8"
 description = "Utility for securing expiring links"
 authors = ["maratsh <ya@maratsh.ru>"]
 license = "MIT"
