@@ -24,6 +24,8 @@ jobs:
       - name:  build python
         run: |
           pip install twine
+          pip install poetry
+          poetry build
 
       - name: Mint pypi token
         id: mint
