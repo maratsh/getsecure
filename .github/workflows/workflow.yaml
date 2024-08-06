@@ -40,7 +40,7 @@ jobs:
       - name: Publish the package with poetry
 
         run: |
-          twine upload dist/python/* --verbose
+          twine upload dist/* --verbose
           # poetry publish -u __token__ -p '${{ steps.mint.outputs.api-token }}'
         env:
           TWINE_USERNAME: '__token__'
